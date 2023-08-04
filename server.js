@@ -15,7 +15,7 @@ app.use(express.json())
 // app.disable('view cache');
 
 
-app.get("/api/shopping-list", (req, res) => {
+app.get("/api/get_users", (req, res) => {
   connection.query("SELECT * FROM Users", (err, data) => {
     if (err) return callback(err, null);
     res.status(200).json({
