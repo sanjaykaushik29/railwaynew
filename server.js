@@ -16,7 +16,12 @@ app.use(express.json())
 app.get("/", (req,res)=>{
     res.send( 'hw' );
 })
+app.get("/api", (req, res) => {
 
+    res.send("serever is running ok").status(200)
+      });
+    
+    
 
 app.listen(port, ()=>{
     console.log('server started');
