@@ -9,7 +9,7 @@ const port = process.env.PORT || 5002
 // app.use(cors())
 
 //middleware
-app.use(express.json())
+// app.use(express.json())
 // app.disable('view cache');
 
 //router 
@@ -24,7 +24,7 @@ app.get("/api", (req, res) => {
 res.send("serever is running ok").status(200)
   });
 
-  
+
 app.listen(port, ()=>{
     console.log('server started');
 })
