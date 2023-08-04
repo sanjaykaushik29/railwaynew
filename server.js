@@ -2,7 +2,7 @@ const express = require('express')
 const app = express();
 
 
-const port = process.env.PORT || 5002
+const port = 5002
 
 
 // addData()
