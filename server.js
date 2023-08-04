@@ -4,7 +4,7 @@ const app = express();
 const { connection } = require("./db");
 
 
-const port = process.env.PORT || 5002
+const port =  5002
 
 
 // addData()
@@ -16,7 +16,7 @@ app.use(express.json())
 
 
 app.get("/api/shopping-list", (req, res) => {
-  connection.query("SELECT * FROM shopping_list", (err, data) => {
+  connection.query("SELECT * FROM Users", (err, data) => {
     if (err) return callback(err, null);
     res.status(200).json({
       status: "success",
