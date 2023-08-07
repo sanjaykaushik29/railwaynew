@@ -16,6 +16,7 @@ app.use(express.json())
 
 
 app.get("/api/get_users", (req, res) => {
+  console.log("called")
   connection.query("SELECT * FROM Users", (err, data) => {
     if (err) return callback(err, null);
     res.status(200).json({
